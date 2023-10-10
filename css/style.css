@@ -33,6 +33,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  border-radius: 10px;
 }
 
 h1 {
@@ -180,8 +181,8 @@ article {
 }
 
 article img {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 #quotes {
@@ -223,11 +224,10 @@ footer {
 }
 
 /* 960px */
-@media (min-width: 60em) {
-  .wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-  }
+@media (max-width: 60em) {
+  #valentines-section {
+  padding: 3em 1em 0 1em;
+}
 
   h1 {
     font-size: var(--font-size-md);
@@ -248,7 +248,7 @@ footer {
 }
 
 /* 768px */
-@media (min-width: 48em) {
+@media (max-width: 48em) {
   #valentines-section {
   display: block;
   }
@@ -264,8 +264,81 @@ footer {
 }
 
 /* 400px (mobile) */
-@media (min-width: 25em) {
+@media (max-width: 25em) {
 
+  #valentines-copy {
+    padding-left: 0;
+  }
+
+  #dough-header img {
+    height: 30px;
+  }
+
+  #valentines {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-areas: 
+    "item1 item1 item1"
+    "item2 item3 item4";
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    margin: 0 auto;
+  }
+
+  #behind-dough {
+    padding: 2em 0.8em 0 0.8em;
+  }
+
+  .behind-para {
+    display: inline-block;
+  }
+
+  .behind-para p {
+    width: 100%;
+  }
+
+  #quotes {
+    display: block;
+  }
+
+  blockquote {
+    width: 80%;
+  }
+
+  #people-saying {
+    padding: 0.5em;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-areas:
+      "dough1 dough2"
+      "dough3 dough4";
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
+    }
+
+    #dough-1 {
+      grid-area: dough1;
+    }
+
+     #dough-2 {
+      grid-area: dough2;
+    }
+
+     #dough-3 {
+      grid-area: dough3;
+    }
+
+      #dough-4 {
+      grid-area: dough4;
+    }
 }
+
+
 
 
