@@ -45,6 +45,10 @@ h2 {
   font-size: var(--font-size-md);
 }
 
+h3 {
+  font-size: var(--font-size-sm);
+}
+
 p {
   font-size: var(--font-size-sm);
 }
@@ -312,6 +316,10 @@ footer {
 
   #people-saying {
     padding: 0.5em;
+  }
+
+  #try-with h3 {
+    font-size: var(--font-size-sm)
   }
 
   .grid-3 {
