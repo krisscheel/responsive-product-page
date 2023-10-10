@@ -36,19 +36,19 @@ img {
 }
 
 h1 {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
 }
 
 h2 {
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-md);
 }
 
 p {
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-sm);
 }
 
 .wrapper {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -84,12 +84,9 @@ nav ul li {
   text-transform: uppercase;
 }
 
-#valentines {
-  padding-top: 2em;
-}
-
 #valentines-section {
   display: flex;
+  padding-top: 3em;
 }
 
 .grid-2 div {
@@ -139,17 +136,90 @@ padding-left: 2em;
   font-size: var(--font-size-m);
 }
 
+.last {
+  margin-bottom: 4em;
+}
+
 .cart { 
   background-color: #000000;
   padding: 10px;
   color: #ffffff;
   border-radius: 10px;
   text-decoration: none;
+}
 
+#behind-dough {
+  padding: 3em;
+}
+
+#behind-dough h2 {
+  text-align: center;
 }
 
 .behind-para {
   display: flex;
+}
+
+.behind-para p {
+  width: 50%;
+  padding-right: 2em;
+}
+
+#people-saying {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 3em;
+}
+
+#people-saying h2 {
+  text-align: center;
+}
+
+article {
+  padding-left: 1em;
+}
+
+article img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#quotes {
+  display: flex;
+}
+
+#try-with {
+  padding: 2em;
+}
+
+#try-with h2 {
+  text-align: center;
+}
+
+.try-it {
+  display: flex;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.name-price {
+  background-color: #ECECEC;
+  margin: auto 0;
+  text-align: center;
+  padding: 3em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 3em;
+}
+
+.grey-line {
+  border-top: 1px solid #ececec;
 }
 
 @media (min-width: 60em) {
