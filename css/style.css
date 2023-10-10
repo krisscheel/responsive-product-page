@@ -222,14 +222,48 @@ footer {
   border-top: 1px solid #ececec;
 }
 
+/* 960px */
 @media (min-width: 60em) {
+  .wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  }
+
+  h1 {
+    font-size: var(--font-size-md);
+  }
+
+  h2 {
+    font-size: var(--font-size-base);
+  }
+
+  blockquote {
+    width: 30%;
+  }
+
+  .name-price {
+    padding: 1em;
+  }
 
 }
 
+/* 768px */
 @media (min-width: 48em) {
+  #valentines-section {
+  display: block;
+  }
+
+  #valentines-copy {
+    padding-top: 2em;
+  }
+
+    .name-price {
+    padding: 0.5em;
+  }
 
 }
 
+/* 400px (mobile) */
 @media (min-width: 25em) {
 
 }
